@@ -1,0 +1,37 @@
+h1{
+   text-align: center;
+    color:red;
+}
+.flex-box{
+    display: flex;
+    justify-content: center;
+}
+#declare{
+    text-align: center;
+}
+@keyframes up-down{
+    0% {transform:rotate(0deg);}
+    17%{transform:rotate(-90deg);} 
+    34% {transform:rotate(0deg);}
+    51%{transform:rotate(-90deg);} 
+    68% {transform:rotate(0deg);}
+    85%{transform:rotate(-90deg);} 
+    100%{transform:rotate(-90deg);} 
+}
+@keyframes up-down-reverse{
+    0% {transform:rotate(0deg);}
+    17%{transform:rotate(90deg);} 
+    34% {transform:rotate(0deg);}
+    51%{transform:rotate(90deg);} 
+    68% {transform:rotate(0deg);}
+    85%{transform:rotate(90deg);} 
+    100%{transform:rotate(90deg);} 
+}
+.arm{
+   
+    animation-name:up-down;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    
+   
+}
