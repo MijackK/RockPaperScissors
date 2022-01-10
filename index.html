@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <title>RockPaperScissors</title>
         <script src="javaScript/script.js"></script> 
         <link rel="stylesheet" href="css/rps.css">
     </head>
     <body>
-        <h1>RockPaperScissors</h1>
-        <ul>
-            <span>Player</span>
-            <Li id="pscore">0</Li>
-            <span>Computer</span>
-            <li id="ascore">0</li>
-        </ul>
-        <div class="flex-box"> 
-        <img src="rock.jpg" width="400" class="arm"  >
-        <!--<img style="transform: scaleX(-1);" src="rock.jpg" width="400">-->
+       
+       
+        <h1> <img src="rpg-title.png"></h1>
+        <div class="flex-box">
+        <img src="player.png"><span class="score-box" id="pscore">0</span>
+        <img src="computer.png"><span class="score-box" id="ascore">0</span>
+        </div>
+        <div class="flex-box" style="height: 250px;"> 
+            
+        <img  src="rock.jpg" width="200"  class="arm-reverse" id="pimage">
+        <img src="rock.jpg" width="200" class="arm" id="aimage" >
+        
+       
     </div>
     <p id="declare">placeholder</p>
-    <input value="Rock" type="button"  onclick="calcWinner(0)">
-    <input value="Paper" type="button" onclick="calcWinner(1)">
-    <input value="Scissors" type="button"onclick="calcWinner(2)">
+    <div class="flex-box">
+    <button   onclick="calcWinner(0)"><img src="rock-text.png"></button>
+    <button  onclick="calcWinner(1)"><img src="paper-text.png"></button>
+    <button onclick="calcWinner(2)"><img src="scissors-text.png"></button>
+</div>
     </body>
 </html>

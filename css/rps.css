@@ -1,13 +1,36 @@
 h1{
    text-align: center;
-    color:red;
+    
+}
+button{
+    width:250px;
+    height: 50px;
+    border-style: solid;
+    cursor: pointer;
+    margin:10px;
+    border-radius: 10px;
+    font-size: 30px;
+    
+}
+
+.score-box{
+    height: 64px;
+    width: 35px;
+    border-style: solid;
+    text-align: center;
+    font-size: 55px;
+    margin: 15px;
+    color: green;
 }
 .flex-box{
     display: flex;
     justify-content: center;
+   
 }
 #declare{
     text-align: center;
+    font-size: 41px;
+
 }
 @keyframes up-down{
     0% {transform:rotate(0deg);}
@@ -28,10 +51,14 @@ h1{
     100%{transform:rotate(90deg);} 
 }
 .arm{
-   
     animation-name:up-down;
     animation-duration: 1.5s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards;     
+}
+.arm-reverse{
+    animation-name:up-down-reverse;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards; 
+    margin-right:210px;
     
-   
 }

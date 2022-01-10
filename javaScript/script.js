@@ -5,15 +5,25 @@ let playerWins= 0;
 let aiWins =0;
 let playerChoice;
 let aiChoice;
+let image=["rock.jpg","paper.png","scissors.png"]
 
+let restartAnimation=()=>{
+    document.getElementById('aimage').className="arm";
+    document.getElementById('pimage').className="arm-reverse";   
+}
+let changeImage=(pimage,aimage)=>{
+    document.getElementById('pimage').src=image[pimage];
+    document.getElementById('aimage').src=image[aimage];
+}
 let endGame=()=>{
     if(aiScore==3){
-        alert("you lose")
+        alert('You lost this round')
         aiWins++;
         document.getElementById('ascore').innerHTML=aiWins
     }
     else{
-        alert("you win")
+        alert('You won this round')
+        
         playerWins++;
         document.getElementById('pscore').innerHTML=playerWins
     }
@@ -21,8 +31,18 @@ let endGame=()=>{
     aiScore=0;
 }
 let calcWinner = (choice) =>{
+    document.getElementById('pimage').src=image[0];
+    document.getElementById('aimage').src=image[0];
     playerChoice=choice
     aiChoice= Math.floor(Math.random() * 3);
+    document.getElementById('pimage').className="";
+    document.getElementById('aimage').className="";
+    setTimeout(restartAnimation,0);
+    
+    setTimeout(changeImage,1320,playerChoice,aiChoice);
+ 
+    
+
     if(aiChoice==playerChoice){
         document.getElementById('declare').innerHTML="Its a draw"
     }
