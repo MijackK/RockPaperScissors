@@ -5,7 +5,8 @@ let playerWins= 0;
 let aiWins =0;
 let playerChoice;
 let aiChoice;
-let image=["rock.jpg","paper.png","scissors.png"]
+let image=["img/rock.jpg","img/paper.png","img/scissors.png"];
+let closeModal=()=>document.getElementById('modal').style.display="none";
 
 let restartAnimation=()=>{
     document.getElementById('aimage').className="arm";
@@ -16,16 +17,16 @@ let changeImage=(pimage,aimage)=>{
     document.getElementById('aimage').src=image[aimage];
 }
 let endGame=()=>{
+    setTimeout(()=>document.getElementById('modal').style.display="flex",1500);
     if(aiScore==3){
-        alert('You lost this round')
+        setTimeout(()=>document.getElementById('end-image').src="img/round-lost.png",1500);
         aiWins++;
         document.getElementById('ascore').innerHTML=aiWins
     }
     else{
-        alert('You won this round')
-        
+        setTimeout(()=>document.getElementById('end-image').src="img/round-won.png",1500);
         playerWins++;
-        document.getElementById('pscore').innerHTML=playerWins
+        document.getElementById('pscore').innerHTML=playerWins;
     }
     playerScore=0;
     aiScore=0;
@@ -44,15 +45,15 @@ let calcWinner = (choice) =>{
     
 
     if(aiChoice==playerChoice){
-        document.getElementById('declare').innerHTML="Its a draw"
+        setTimeout(()=>document.getElementById('declare').innerHTML="<img src='img/draw.png'>",1350);
     }
     else if( playerChoice==0 && aiChoice==2 || playerChoice==1 && aiChoice==0 || playerChoice==2 && aiChoice==1 ){
         playerScore++;
-        document.getElementById('declare').innerHTML="You Win";
+        setTimeout(()=>document.getElementById('declare').innerHTML="<img src='img/win.png'>",1350);
     }
     else{
         aiScore++;
-        document.getElementById('declare').innerHTML="You Lose";
+        setTimeout(()=>document.getElementById('declare').innerHTML="<img src='img/lose.png'>",1350);
     }
     if(aiScore==3 || playerScore==3){
        

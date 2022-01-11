@@ -7,25 +7,31 @@
         <link rel="stylesheet" href="css/rps.css">
     </head>
     <body>
+        <div class="modal" id="modal">
+              <div id="end-box">
+                  <img src="" id="end-image"> 
+                  <button onclick="closeModal()">Try Again</button>
+                </div> 
+              
+       </div>
        
-       
-        <h1> <img src="rpg-title.png"></h1>
+        <h1> <img src="img/rpg-title.png"></h1>
         <div class="flex-box">
-        <img src="player.png"><span class="score-box" id="pscore">0</span>
-        <img src="computer.png"><span class="score-box" id="ascore">0</span>
+        <img src="img/player.png"><span class="score-box" id="pscore">0</span>
+        <img src="img/computer.png"><span class="score-box" id="ascore">0</span>
         </div>
         <div class="flex-box" style="height: 250px;"> 
             
-        <img  src="rock.jpg" width="200"  class="arm-reverse" id="pimage">
-        <img src="rock.jpg" width="200" class="arm" id="aimage" >
+        <img  src="img/rock.jpg" width="200"  class="arm-reverse" id="pimage">
+        <img src="img/rock.jpg" width="200" class="arm" id="aimage" >
         
        
     </div>
-    <p id="declare">placeholder</p>
+    <p id="declare"></p>
     <div class="flex-box">
-    <button   onclick="calcWinner(0)"><img src="rock-text.png"></button>
-    <button  onclick="calcWinner(1)"><img src="paper-text.png"></button>
-    <button onclick="calcWinner(2)"><img src="scissors-text.png"></button>
+    <button   onclick="calcWinner(0)"><img src="img/rock-text.png"></button>
+    <button  onclick="calcWinner(1)"><img src="img/paper-text.png"></button>
+    <button onclick="calcWinner(2)"><img src="img/scissors-text.png"></button>
 </div>
     </body>
 </html>
