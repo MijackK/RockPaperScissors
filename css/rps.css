@@ -132,5 +132,8 @@ button{
 #paper{
     margin-top:10px;
 }
+body{
+    overflow-x: hidden;
+}
    
   }
