@@ -2,6 +2,7 @@ h1{
    text-align: center;
     
 }
+
 button{
     width:250px;
     height: 50px;
@@ -11,13 +12,10 @@ button{
     border-radius: 10px;
     font-size: 30px;
 }
-.footer{
-
-}
 
 .score-box{
-    height: 64px;
-    width: 35px;
+    max-height: 64px;
+    max-width: 35px;
     border-style: solid;
     text-align: center;
     font-size: 55px;
@@ -52,7 +50,7 @@ button{
    padding:10px;
    align-items: center;
     margin-top:10%;
-    width:500px;
+    max-width:500px;
     height:fit-content;
     background-color: whitesmoke;
 }
@@ -88,3 +86,32 @@ button{
     margin-right:210px;
     
 }
+
+footer{
+    font-size: 25px;
+    color: #787878;
+    margin-top:15px;
+    text-align: center;
+    
+}
+footer >a{
+    text-decoration: none;
+    color: #787878;
+}
+footer >a:hover{
+   color: black;
+}
+@media only screen and (max-width: 430px) {
+  img{
+      max-width: 100%;
+  }
+ #end-box{
+     width: 100%;
+ }
+ 
+#p-image{
+    width:97px;
+    height: auto;
+}
+   
+  }

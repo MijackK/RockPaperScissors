@@ -6,6 +6,7 @@ let aiWins =0;
 let playerChoice;
 let aiChoice;
 let image=["img/rock.jpg","img/paper.png","img/scissors.png"];
+
 let closeModal=()=>document.getElementById('modal').style.display="none";
 
 let restartAnimation=()=>{

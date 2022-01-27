@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RockPaperScissors</title>
         <script src="javaScript/script.js"></script> 
         <link rel="stylesheet" href="css/rps.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <link rel="preload" href="img/draw.png" as="image">
         <link rel="preload" href="img/lose.png" as="image">
         <link rel="preload" href="img/paper.png" as="image">
@@ -26,8 +27,8 @@
        
         <h1> <img src="img/rpg-title.png"></h1>
         <div class="flex-box">
-        <img src="img/player.png"><span class="score-box" id="pscore">0</span>
-        <img src="img/computer.png"><span class="score-box" id="ascore">0</span>
+        <img id="p-image" src="img/player.png"><span class="score-box" id="pscore">0</span>
+        <img  id="p-image" src="img/computer.png"><span class="score-box" id="ascore">0</span>
         </div>
         <div class="flex-box" style="height: 250px;"> 
             
@@ -42,5 +43,10 @@
     <button  onclick="calcWinner(1)"><img src="img/paper-text.png"></button>
     <button onclick="calcWinner(2)"><img src="img/scissors-text.png"></button>
 </div>
+<footer>
+    Made by<a href="https://github.com/MijackK/RockPaperScissors" target="_blank"> <i class="fab fa-github"></i></a>
+    
+</footer>
+   
     </body>
 </html>
