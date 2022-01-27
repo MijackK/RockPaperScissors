@@ -121,7 +121,7 @@ footer >a:hover{
  
 #p-image{
     width:100%;
-    height:50px;
+    height:auto;
 }
 button{
     height: auto;
