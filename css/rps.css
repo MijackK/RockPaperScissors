@@ -76,7 +76,8 @@ button{
 .arm{
     animation-name:up-down;
     animation-duration: 1.5s;
-    animation-fill-mode: forwards;     
+    animation-fill-mode: forwards;  
+    width: 200px;   
     
 }
 .arm-reverse{
@@ -84,6 +85,7 @@ button{
     animation-duration: 1.5s;
     animation-fill-mode: forwards; 
     margin-right:210px;
+    width: 200px;   
     
 }
 
@@ -101,9 +103,9 @@ footer >a{
 footer >a:hover{
    color: black;
 }
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 500px) {
   img{
-      max-width: 100%;
+     width: 100%;
       height: auto;
   }
  #end-box{
@@ -132,8 +134,16 @@ button{
 #paper{
     margin-top:10px;
 }
-body{
-    overflow-x: hidden;
+.arm{
+    width:100%;
+    height: auto;
+
 }
-   
+.arm-reverse{
+    width:100%;
+    height: auto;
+    margin-right: 100px;
+
+}
+
   }
